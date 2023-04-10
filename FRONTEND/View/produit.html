@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/fa75e0dafd.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="/FRONTEND/Css/style.css" /> 
+        <title>Appareil Photo Vintage Orinoco - Page produit</title>
+    </head>
+
+    <body>
+        <div id="bloc_page" class="container-fluid">
+           <header class="header">
+                <a href="index.html">
+                    <img class="logo" src="/BACKEND/images/logo.png" alt="logo Orinoco"/>
+                </a>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="liste">
+                            <a href="/FRONTEND/View/panier.html">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main class="main_produit container-fluid form-row">
+                <div class="main_image col">
+                    <img class="image_loading" src="" alt="appareil photo vintage">
+                </div>
+                <div class="main_description col">
+                    <div>
+                        <h1 class="name title">Nom</h1>
+                        <p class="price">Prix</p>
+                    </div>
+                    <form class="lenses_option">
+                        <label for="cameras_lenses">Choix des lentilles :</label>
+                        <select name="lenses" id="cameras_lenses"></select>
+                    </form>
+                    <button id="btn_primary" type="submit" name="btn_primary">
+                        AJOUTER AU PANIER
+                    </button>
+                    <div>
+                        <p class="description">Description</p> 
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!--script-->
+        <script src="/FRONTEND/Js/produit.js"></script>     
+    </body>
+
+</html>

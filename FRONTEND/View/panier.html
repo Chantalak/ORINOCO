@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=News+Cycle:wght@400;700&display=swap" rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/fa75e0dafd.js" crossorigin="anonymous"></script>
+
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+        <link rel="stylesheet" href="/FRONTEND/Css/style.css" /> 
+        <title>Appareil Photo Vintage Orinoco - Page panier</title>
+    </head>
+
+    <body>
+        <div id="bloc_page">
+          <header class="header">
+                <a href="index.html">
+                    <img class="logo" src="/BACKEND/images/logo.png" alt="logo Orinoco"/>
+                </a>
+                <nav class="nav">
+                    <ul class="menu">
+                        <li class="liste">
+                            <a href="/FRONTEND/View/panier.html">
+                                <i class="fas fa-shopping-cart"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+
+            <main id="vide" class="container-fluid">
+                <section class="container_panier">
+                    <table class="panier">
+                        <thead class="panier_head">
+                            <tr class="title_panier form-row">
+                                <th class="col-4">Produit</th>
+                                <th class="col-2">Nom</th>
+                                <th class="col-2">Lentilles</th>
+                                <th class="col-2">Quantité</th>
+                                <th class="col-2">Prix</th>
+                            </tr>
+                        </thead>
+
+                        <tbody class="panier_body">
+                        </tbody>
+
+                        <tfoot class="panier_foot">
+                            <tr class="form-row col 12">
+                                <td class="tposition col-10">Total :</td>
+                                <td class="total col-2">Total</td>
+                            </tr>
+                        </tfoot>
+                    </table>
+
+                    <div class="btn_panier">
+                        <button type="button" class="button cart_button_clear">Vider le panier</button>
+                        <a href="../View/index.html">
+                            <button type="button" class="button return_home">Continuer son Shopping</button>
+                        </a>
+                    </div>
+                </section>
+                
+                <section>
+                    <form action="confirmation.html" method="POST" id="formulaire">
+                        <div class="form-row">
+                            <div class="col">
+                                <label for="lastName">Nom :</label>
+                                <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Nom" required>
+                            </div>
+                            <div class="col">
+                                <label for="firstName">Prénom :</label>
+                                <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Prénom" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="address">Adresse :</label>
+                            <input type="text" id="address" name="address" class="form-control" placeholder="Adresse" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="city">Ville :</label>
+                            <input type="text" id="city" name="city" class="form-control" placeholder="Ville" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" class="form-control" placeholder="Email" required>
+                        </div>
+                        <div class="col-auto">
+                            <button type="submit" value="OK" class="btn-primary mb-2">Valider la commande</button>
+                        </div>
+                    </form>
+                </section>
+            </main>
+            <div class="panier_vide"></div>
+        </div> 
+        
+        
+        <!--script-->
+        <script src="/FRONTEND/Js/panier.js"></script>
+    </body>
+
+</html>

@@ -1,0 +1,232 @@
+/*ELEMENT DE CHAQUE PAGE*/
+body{
+    font-family: 'News Cycle', sans-serif;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    background-color: #2e2c2b;
+}
+
+a{
+    color: #000000c5;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #6b321d;
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+}
+
+button{
+    padding: 0.5rem;
+    border: none;
+}
+
+button:hover{
+    background-color: #d3d3c1;
+    border: none;
+}
+
+#bloc_page{
+    color: #beb8b2;
+    padding: 0px;
+}
+
+/*MEME ENTETE SUR TOUTES LES PAGES*/
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px;
+    background-color: #C9C4BE;
+    width: 100%;
+}
+
+.logo{
+    width: 200px;
+}
+
+.menu{
+    margin: 0px;
+}
+
+.liste{
+    padding-right: 15px;
+    font-size: 2.5rem;
+}
+
+/*CORPS PAGE INDEX*/
+.container{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.h1{
+    font-weight: bold;
+    padding: 30px 0px 30px 0px;
+    margin-bottom: 0px;
+}
+
+.box{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+}
+
+.produit{
+    width: 350px;
+    color: #beb8b2;
+    cursor: pointer;
+    padding: 1.85rem 3rem;
+    transform: scale(1);
+    transition: transform 400ms;
+}
+
+.produit:hover {
+    color: #beb8b2;
+    transform: scale(1.15);
+    text-decoration: none;
+}
+
+.image{
+    width: 100%;
+}
+
+.details{
+    padding-bottom: 5%;
+}
+
+h2, 
+p{
+    margin: 0px;
+}
+
+/*CORPS PAGE PRODUIT*/
+.main_image{
+    height: 100%;
+    padding: 30px;
+}
+
+.image_loading{
+    width: 100%;
+    object-fit: cover;
+}
+
+.main_description{
+    font-size: large;
+    display: flex;
+    flex-direction: column;
+    padding: 4%;
+}
+
+.title{
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+/*CORPS PAGE PANIER*/ 
+.panier{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-between;
+}
+.container_panier{
+    margin: 5% 10%;
+}
+
+.contenu_panier{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.image_panier{
+    width: 50%;
+}
+
+#formulaire{
+    margin: 0% 10%;
+}
+
+/*CORPS PAGE PANIER*/ 
+.itext{
+    width: 100%;
+    text-align: center;
+    font-size: 7rem;
+    margin-top: 100px;
+}
+
+.texte{
+    font-size: 1.1rem;
+}
+
+/*CORPS PAGE CONFIRMATION*/ 
+.remerciement{
+    width: 100%;
+    text-align: center;
+    margin-top: 10%;
+}
+
+#btn-confirmation{
+    margin-top: 5%;
+}
+
+/*Extra small devices (portrait phones, less than 576px)*/
+@media (max-width: 575px) {
+    /*CORPS PAGE INDEX*/
+    .box{
+        justify-content: center;
+    }
+
+    /*CORPS PAGE PRODUIT*/
+    .main_produit{
+        flex-direction: column;
+    }
+
+    /*CORPS PAGE PANIER*/
+    .container_panier{
+        margin: 10% 0% 0% 0%;
+    }
+    .panier_head{
+        display: none;
+    }
+
+    .image_panier{
+        width: 100%;
+    }
+
+    .btn_panier{
+        width: fit-content;
+        margin-top: 10px;
+    }
+
+    #formulaire{
+        margin: 0%;
+    }
+}
+
+@media (min-width: 575px) and (max-width: 991px) {
+     /*CORPS PAGE INDEX*/
+    .box{
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1080px) {
+    /*CORPS PAGE PRODUIT*/
+    .main_image{
+        margin: 0% 0% 10% 10%;
+    }
+    .main_description{
+        margin: 0% 10% 10% 0%;;
+    }
+}
