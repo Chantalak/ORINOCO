@@ -21,7 +21,7 @@ Création du front-end d'un site e-commerce en Javascript par la consommation d'
 
 ## Tester l'application web
 ### Tester le site en local
-Prérequis
+#### Prérequis
 - Node.js (version 14.15.1 LTS utilisée durant le développement)
 - NPM (version 6.14.8 utilisée durant le développement)
 
